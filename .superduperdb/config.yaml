@@ -1,0 +1,8 @@
+
+data_backend: mongodb://127.0.0.1:27017/saved_posts/posts
+artifact_store: filesystem://./artifact_store
+cluster:
+  vector_search:
+    backfill_batch_size: 100
+    type: in_memory
+    uri: http://127.0.0.1:21000
